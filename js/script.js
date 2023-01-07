@@ -1,5 +1,9 @@
 let musica = document.querySelector("audio");
 
+let duracaoMusica = document.querySelector(".fim");
+
+duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+
 document.querySelector(".botao-play").addEventListener("click", tocarMusica);
 
 document.querySelector(".botao-pause").addEventListener("click", pausarMusica);
@@ -23,7 +27,9 @@ function atualizarBarra() {
   barra.style.width =
     Math.floor((musica.currentTime / musica.duration) * 100) + "%";
   let tempoDecorrido = document.querySelector(".inicio");
-  tempoDecorrido.textContent = Math.floor(musica.currentTime);
+  tempoDecorrido.textContent = segundosParaMinutos(
+    Math.floor(musica.currentTime)
+  );
 }
 
 function segundosParaMinutos() {
