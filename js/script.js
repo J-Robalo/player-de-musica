@@ -1,6 +1,30 @@
+let musicas = [
+  {
+    titulo: "Guitar solo",
+    artista: "João Tinti",
+    src: "musicas/We Ride! - Reed Mathis.mp3",
+    img: "img/rock.jpeg",
+  },
+  {
+    titulo: "Samba raiz",
+    artista: "Bossa Nova Brasil",
+    src: "musicas/projeto_spotify_parte_1_musicas_Ella Vater - The Mini Vandals.mp3",
+    img: "img/samba.jpeg",
+  },
+  {
+    titulo: "Música Piano",
+    artista: "John Green",
+    src: "musicas/A Brand New Start - TrackTribe (1).mp3",
+    img: "img/piano.jpeg",
+  },
+];
+
 let musica = document.querySelector("audio");
 
 let duracaoMusica = document.querySelector(".fim");
+let imagem = document.querySelector("img");
+let nomeMusica = document.querySelector(".descricao h2");
+let nomeArtista = document.querySelector(".descricao i");
 
 duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
 
