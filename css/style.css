@@ -1,5 +1,4 @@
-body,
-html {
+main {
   margin: 0;
   padding: 0;
   display: flex;
@@ -14,7 +13,7 @@ html {
 
 .conteudo {
   border-radius: 15px;
-  border: 3px solid #b4bbc2;
+  border: 3px solid white;
   padding: 10px;
 }
 
@@ -87,4 +86,36 @@ progress {
 
 .botao-pause {
   display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(185, 185, 235);
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: white;
+}
+
+.redes-sociais {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.redes-sociais p {
+  color: rgb(17, 17, 45);
+  font-family: "Montserrat", sans-serif;
+}
+
+.lista-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.rede {
+  padding-right: 25px;
 }

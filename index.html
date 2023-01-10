@@ -10,34 +10,55 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Player de Música</title>
 </head>
 
 <body>
-  <div class="conteudo">
-    <img src="img/madrugada-train-station.png">
-    <div class="descricao">
-      <h2>From the Train Station</h2>
-      <i>Igor Mascarenhas</i>
-    </div>
-    <div class="duracao">
-      <div class="barra">
-        <progress value="0" max="1"></progress>
-        <div class="ponto"></div>
+  <main>
+    <div class="conteudo">
+      <img src="img/madrugada-train-station.png">
+      <div class="descricao">
+        <h2>From the Train Station</h2>
+        <i>Igor Mascarenhas</i>
       </div>
-      <div class="tempo">
-        <p class="inicio">0:00</p>
-        <p class="fim">3:40</p>
+      <div class="duracao">
+        <div class="barra">
+          <progress value="0" max="1"></progress>
+          <div class="ponto"></div>
+        </div>
+        <div class="tempo">
+          <p class="inicio">0:00</p>
+          <p class="fim">3:40</p>
+        </div>
       </div>
+      <div class="player">
+        <i class="fas fa-step-backward setas anterior"></i>
+        <i class="fas fa-play-circle botao-play"></i>
+        <i class="fas fa-pause-circle botao-pause"></i>
+        <i class="fas fa-step-forward setas proximo"></i>
+      </div>
+      <audio src="musicas/Igor Mascarenhas - From the Train Station.mp3"></audio>
     </div>
-    <div class="player">
-      <i class="fas fa-step-backward setas anterior"></i>
-      <i class="fas fa-play-circle botao-play"></i>
-      <i class="fas fa-pause-circle botao-pause"></i>
-      <i class="fas fa-step-forward setas proximo"></i>
+  </main>
+
+  <footer>
+    <div class="redes-sociais">
+      <p>Disponíveis também nas plataformas:</p>
+      <nav>
+        <ul class="lista-redes">
+          <li class="rede">
+            <a href="https://open.spotify.com/artist/6rjWU7pNCvSQjUeJ12wu1P" target="_blank">
+              <i class="fa-brands fa-spotify"></i>
+            </a>
+          </li>
+          <li class="rede"><a href="https://music.apple.com/mg/artist/igor-mascarenhas/1484257526" target="_blank"><i class="fa-brands fa-apple"></i></a></li>
+          <li class="rede"><a href="https://soundcloud.com/igormascarenhas" target="_blank"><i class="fa-brands fa-soundcloud"></i></a></li>
+        </ul>
+      </nav>
     </div>
-    <audio src="musicas/Igor Mascarenhas - From the Train Station.mp3"></audio>
-  </div>
+  </footer>
+
   <script src="js/script.js"></script>
 
 </body>
