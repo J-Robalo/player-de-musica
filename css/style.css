@@ -2,7 +2,30 @@ body {
   margin: 0;
 }
 
-main {
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(185, 185, 235);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+  padding: 10px;
+}
+
+.sobre {
+  text-decoration: none;
+  color: rgb(17, 17, 45);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+.sobre:hover {
+  font-weight: bolder;
+}
+
+.audio-player {
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,7 +33,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: rgb(17, 17, 45);
+  background-color: rgb(20, 20, 49);
   color: #ddd;
   font-family: "Montserrat", sans-serif;
 }
@@ -19,6 +42,7 @@ main {
   border-radius: 15px;
   border: 3px solid white;
   padding: 10px;
+  background-color: rgb(5, 5, 41);
 }
 
 img {
@@ -92,12 +116,14 @@ progress {
   display: none;
 }
 
-footer {
+.rodape {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(185, 185, 235);
   border-top-style: solid;
-  border-top-width: 3px;
+  border-top-width: 1px;
   border-top-color: white;
 }
 
