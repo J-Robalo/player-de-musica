@@ -7,7 +7,7 @@ html {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #333;
+  background-color: rgb(17, 17, 45);
   color: #ddd;
   font-family: "Montserrat", sans-serif;
 }
