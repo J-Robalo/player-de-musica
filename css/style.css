@@ -158,3 +158,20 @@ progress {
 .rede {
   padding-right: 25px;
 }
+
+/* Alinhando seções */
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  display: flex;
+  align-items: start;
+  padding-left: 25px;
+}
+
+.coluna p {
+  padding-left: 15px;
+}
